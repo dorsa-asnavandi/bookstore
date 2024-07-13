@@ -1,0 +1,167 @@
+@font-face {
+  font-family: IranSans;
+  src: url(../fonts/iransans/Medium/IRANSansWeb.ttf) format("truetype"), url(../fonts/iransans/Regular/IRANSansWeb.eot) format("opentype"), url(../fonts/iransans/Regular/IRANSansWeb.woff) format("woff"), url(../fonts/iransans/Regular/IRANSansWeb.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: IranSans;
+  src: url(../fonts/iransans/Medium/IRANSansWeb_Medium.ttf) format("truetype"), url(../fonts/iransans/Medium/IRANSansWeb_Medium.eot) format("opentype"), url(../fonts/iransans/Medium/IRANSansWeb_Medium.woff) format("woff"), url(../fonts/iransans/Medium/IRANSansWeb_Medium.woff2) format("woff2");
+  font-weight: 500;
+}
+* {
+  font-family: IranSans, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.baby-books {
+  background-color: white;
+}
+.baby-books .baby-title {
+  color: #222222;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 37.57px;
+}
+.baby-books .info-txt {
+  color: #3a3c3b;
+  line-height: 40px;
+}
+.baby-books .aside-custom {
+  border: 1px solid #f3f3f3;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.baby-books .aside-custom .card-header-custom {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.04px;
+  background: linear-gradient(49.96deg, #ff6901 16.56%, #ff9c03 87.28%);
+  border: none;
+  color: #ffffff;
+}
+.baby-books .aside-custom .list-group-custom {
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.baby-books .aside-custom .list-group-custom .list-group-item-custom {
+  color: #646363;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.91px;
+  border: none;
+  vertical-align: middle;
+}
+.baby-books .aside-custom .list-group-custom .list-group-item-custom::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #ff6801;
+}
+.baby-books .books .book-custom {
+  position: relative;
+  border: none;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 18px;
+}
+.baby-books .books .book-custom::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 51%;
+  height: 130px;
+  background-image: url("../../img/back.png");
+  background-size: cover;
+  background-position: center;
+}
+.baby-books .books .book-custom .info-book .title-book {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.04px;
+}
+.baby-books .books .book-custom .info-book .subtitle-book {
+  color: #3a3c3b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.91px;
+}
+.baby-books .books .book-custom .info-book .buy-cost .costs .cost .main-cost {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 17.22px;
+  color: #b6b6b6;
+}
+.baby-books .books .book-custom .info-book .buy-cost .costs .cost .off-percent {
+  background-color: #ff6901;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18.78px;
+}
+.baby-books .books .book-custom .info-book .buy-cost .costs .off-cost .off-cost-txt {
+  color: #3a3c3b;
+  font-weight: 400;
+  line-height: 25.04px;
+}
+.baby-books .books .book-custom .info-book .buy-cost .costs .off-cost .off-cost-unit {
+  color: #8c8c8c;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18.78px;
+}
+.baby-books .books .book-custom .info-book .buy-cost .buy .buy-btn-custom {
+  padding: 10px;
+  border: 1px solid #ff6901;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.baby-books .books .book-custom .info-book .buy-cost .buy .buy-btn-custom span {
+  color: #ff6801;
+}
+.baby-books .books .btn-books {
+  width: 80px;
+  position: relative;
+  background: linear-gradient(49.96deg, #ff6901 16.56%, #ff9c03 87.28%);
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  outline: none;
+}
+.baby-books .books .btn-books::before {
+  content: "";
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 50%;
+  right: -35%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.baby-books .books .btn-books::after {
+  content: "";
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 50%;
+  left: -35%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.baby-books .books .btn-books .icon-parent {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=main.css.map */

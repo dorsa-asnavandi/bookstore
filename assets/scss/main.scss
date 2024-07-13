@@ -1,0 +1,439 @@
+@font-face {
+  font-family: IranSans;
+  src: url(../fonts/iransans/Medium/IRANSansWeb.ttf) format("truetype"),
+    url(../fonts/iransans/Regular/IRANSansWeb.eot) format("opentype"),
+    url(../fonts/iransans/Regular/IRANSansWeb.woff) format("woff"),
+    url(../fonts/iransans/Regular/IRANSansWeb.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: IranSans;
+  src: url(../fonts/iransans/Medium/IRANSansWeb_Medium.ttf) format("truetype"),
+    url(../fonts/iransans/Medium/IRANSansWeb_Medium.eot) format("opentype"),
+    url(../fonts/iransans/Medium/IRANSansWeb_Medium.woff) format("woff"),
+    url(../fonts/iransans/Medium/IRANSansWeb_Medium.woff2) format("woff2");
+  font-weight: 500;
+}
+
+* {
+  font-family: IranSans, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+// background
+$gray-back: #f3f3f3;
+$aside-back-icon: #F9F9F9;
+$gradient-back: linear-gradient(49.96deg, #ff6901 16.56%, #ff9c03 87.28%);
+$collection-gradient-back: linear-gradient(258.48deg, #ff6a00 0%, #ffa300 100%);
+$orange-color: #ff6801;
+$off-back-color: #ff6901;
+
+//txt
+$dark-title: #222222;
+$txt-color: #3a3c3b;
+$white-color: #ffffff;
+$aside-txt-color: #646363;
+$main-cost-color: #b6b6b6;
+$off-unit-color: #8c8c8c;
+$comment-txt-color: #646363;
+
+//border-radius
+$border-radius-6: 6px;
+$border-radius-10: 10px;
+$border-radius-12: 12px;
+$border-radius-18: 18px;
+$border-radius-22: 22px;
+$border-radius-circle: 50%;
+
+//box-shadow
+$shadow-book: 0px 0px 8px 0px #00000014;
+
+// breakpoints
+$sm_breakpoint: 576px;
+$md_breakpoint: 768px;
+$lg_breakpoint: 992px;
+$xl_breakpoint: 1200px;
+$xxl_breakpoint: 1400px;
+
+// be body okeye rang dadam?
+body {
+  background-color: $white-color;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.card-custom {
+  border: none;
+  background-color: $white-color;
+  box-shadow: $shadow-book;
+
+  .info-book {
+    .title-book {
+      color: $dark-title;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25px;
+    }
+
+    .subtitle-book {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+
+    .buy-cost {
+      .costs {
+        .cost {
+          .main-cost {
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 17.22px;
+            color: $main-cost-color;
+          }
+          .off-percent {
+            background-color: $off-back-color;
+            color: $white-color;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18.78px;
+          }
+        }
+
+        .off-cost {
+          .off-cost-txt {
+            color: $txt-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25.04px;
+          }
+          .off-cost-unit {
+            color: $off-unit-color;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18.78px;
+          }
+        }
+      }
+
+      .buy {
+        z-index: 1;
+        .buy-btn-custom {
+          padding: 10px;
+          border: 1px solid $off-back-color;
+          border-radius: $border-radius-12;
+          cursor: pointer;
+          transition: 0.3s;
+
+          .buy-icon {
+            //coloresh back off colore vali mese hame are ? in okeye?
+            //font icon daghigh mesle un nist okeye?
+            //andaze font-icon
+            color: $orange-color;
+            transition: 0.3s;
+          }
+
+          &:hover {
+            color: $white-color;
+            background-color: $off-back-color;
+            .buy-icon {
+              color: $white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.padding-bg {
+  padding-top: 100%;
+}
+
+.background-img-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.baby-books {
+  .baby-title {
+    color: $dark-title;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 37.57px;
+  }
+
+  .info-txt {
+    color: $txt-color;
+    line-height: 40px;
+  }
+
+  .aside-custom {
+    border: 1px solid #f3f3f3;
+    border-radius: $border-radius-18;
+    overflow: hidden;
+
+    .card-header-custom {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25.04px;
+      background: $gradient-back;
+      border: none;
+      color: $white-color;  
+
+      .icon-aside {
+        padding: 7.5px;
+        background-color: $aside-back-icon;
+        border-radius: $border-radius-circle;
+        .arrow-icon-aside {
+          color: $off-back-color;
+          border: 1px solid $off-back-color;
+          border-radius: $border-radius-circle;
+        }
+        // @media (max-width: $lg_breakpoint) {
+        //   padding: 2px;
+        // }
+      }
+
+    }
+
+    .list-group-custom {
+      .list-group-item-custom {
+        color: $aside-txt-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21.91px;
+        border: none;
+        vertical-align: middle;
+
+        &::before {
+          content: "";
+          width: 6px;
+          height: 6px;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          border-radius: 50%;
+          background-color: $orange-color;
+        }
+      }
+    }
+  }
+  //   be span nadadam font-size inaro okeye k be parent dadam?
+
+  // ******esme subtitle book ro avaz nakrdam**********
+  .books {
+    .book-custom {
+      // background-color: white;
+      border-radius: $border-radius-18;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        padding-top: 30%;
+        background-image: url("../../img/back.png");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .subtitle-book {
+        color: $txt-color;
+      }
+    }
+
+    .btn-books {
+      width: 100%;
+      position: relative;
+      background: $gradient-back;
+      border: none;
+      border-radius: $border-radius-18;
+      overflow: hidden;
+      outline: none;
+
+      @media (min-width: $lg_breakpoint) {
+        width: 80px;
+      }
+
+      &::before {
+        content: "";
+        // padding nmishe dad?
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(75%, -50%);
+        border-radius: $border-radius-circle;
+        background-color: $white-color;
+      }
+
+      &::after {
+        content: "";
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-75%, -50%);
+        border-radius: $border-radius-circle;
+        background-color: $white-color;
+      }
+
+      .icon-parent {
+        padding: 7px;
+        border: 1px solid $white-color;
+        border-radius: $border-radius-circle;
+        color: $white-color;
+      }
+    }
+  }
+}
+
+.books-collection {
+  position: relative;
+  background: $collection-gradient-back;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 74px;
+    height: 34.63px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../img/rectangle.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .collection-title {
+    color: $white-color;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 37.57px;
+  }
+
+  .best-cell-books {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: $white-color;
+  }
+
+  .slider {
+    position: relative;
+    .cards-container {
+      .collection-card-custom {
+        border-radius: $border-radius-22;
+
+        .info-book {
+          .title-book {
+            position: relative;
+
+            &::before {
+              content: "";
+              width: 10px;
+              height: 10px;
+              position: absolute;
+              top: 50%;
+              right: 0;
+              transform: translate(15px, -50%);
+              border-radius: 50%;
+              background: $gradient-back;
+            }
+          }
+
+          .subtitle-book {
+            color: $white-color;
+            background-color: $orange-color;
+            border-radius: $border-radius-6;
+          }
+        }
+      }
+    }
+
+    .arrow-container {
+      .arrow-icon-parent {
+        //andaze o padding arrow ha
+        // width: 27px;
+        // height: 27px;
+        // padding: 10px;
+        border: 1px solid $white-color;
+        cursor: pointer;
+        border-radius: $border-radius-circle;
+
+        .arrow-icon {
+          color: $white-color;
+        }
+      }
+
+      .arrow-right-icon-parent {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(100%, -50%);
+        margin-right: -18px;
+      }
+
+      .arrow-left-icon-parent {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-100%, -50%);
+        margin-left: -18px;
+      }
+    }
+  }
+}
+
+.all-books {
+  background-color: $gray-back;
+  position: relative;
+  margin-top: 95px;
+
+  &::before {
+    //locarion in ax ok nist
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 74px;
+    height: 34.63px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../img/rectangle.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .all-books-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 37.57px;
+    color: $dark-title;
+  }
+
+  .comment-books {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28.17px;
+    color: $comment-txt-color;
+  }
+
+  .all-books-card {
+    border-radius: $border-radius-10;
+  }
+}
+
+.gallery {
+  .banner {
+    border-radius: $border-radius-12;
+  }
+}

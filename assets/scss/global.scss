@@ -1,0 +1,152 @@
+@font-face {
+  font-family: IranSans;
+  src: url(../fonts/iransans/Medium/IRANSansWeb.ttf) format("truetype"),
+    url(../fonts/iransans/Regular/IRANSansWeb.eot) format("opentype"),
+    url(../fonts/iransans/Regular/IRANSansWeb.woff) format("woff"),
+    url(../fonts/iransans/Regular/IRANSansWeb.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: IranSans;
+  src: url(../fonts/iransans/Medium/IRANSansWeb_Medium.ttf) format("truetype"),
+    url(../fonts/iransans/Medium/IRANSansWeb_Medium.eot) format("opentype"),
+    url(../fonts/iransans/Medium/IRANSansWeb_Medium.woff) format("woff"),
+    url(../fonts/iransans/Medium/IRANSansWeb_Medium.woff2) format("woff2");
+  font-weight: 500;
+}
+
+* {
+  font-family: IranSans, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+//background
+// fffff
+$white-back: white;
+$gray-back: #f3f3f3;
+$gradient-back: linear-gradient(49.96deg, #ff6901 16.56%, #ff9c03 87.28%);
+// mese haman in dota rang
+$orange-color: #ff6801;
+$off-back-color: #ff6901;
+
+//title
+//font size , weight
+$dark-title: #222222;
+$title-size: 24px;
+$title-weight: 500;
+$title-line-height: 37.57px;
+
+//txt
+$txt-color: #3a3c3b;
+$white-color: #ffffff;
+$aside-txt-color: #646363;
+$main-cost-color: #b6b6b6;
+$off-unit-color: #8c8c8c;
+$comment-txt-color: #646363;
+
+//border-radius
+// 5.84px
+$border-radius-6: 6px;
+$border-radius-10: 10px;
+$border-radius-12: 12px;
+$border-radius-18: 18px;
+//21.59px
+$border-radius-21: 21px;
+$border-radius-circle: 50%;
+
+//box-shadow
+$shadow-book: 0px 0px 8px 0px #00000014;
+
+// breakpoints
+$sm_breakpoint: 576px;
+$md_breakpoint: 768px;
+$lg_breakpoint: 992px;
+$xl_breakpoint: 1200px;
+$xxl_breakpoint: 1400px;
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.card-custom {
+  border: none;
+  background-color: $white-color;
+  box-shadow: $shadow-book;
+
+  .info-book {
+    .title-book {
+      color: $dark-title;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25px;
+    }
+    .subtitle-book {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+    .buy-cost {
+      .costs {
+        .cost {
+          .main-cost {
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 17.22px;
+            color: $main-cost-color;
+          }
+          .off-percent {
+            background-color: $off-back-color;
+            color: $white-color;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18.78px;
+          }
+        }
+        .off-cost {
+          .off-cost-txt {
+            color: $txt-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25.04px;
+          }
+          .off-cost-unit {
+            color: $off-unit-color;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18.78px;
+          }
+        }
+      }
+      .buy {
+        z-index: 1;
+        .buy-btn-custom {
+          padding: 10px;
+          border: 1px solid $off-back-color;
+          border-radius: $border-radius-12;
+          cursor: pointer;
+          // z-index: 1;
+          // class i
+          i {
+            //coloresh back off colore vali mese hame are ? in okeye?
+            //class bayda bedam?
+            //font icon daghigh mesle un nist okeye?
+            //andaze font-icon
+            color: $orange-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.padding-bg {
+  padding-top: 100%;
+}
+
+.background-img-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
